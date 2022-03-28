@@ -1,0 +1,21 @@
+{
+  "name": "projet_3_ohmyfood_machet_antoine",
+  "version": "1.0.0",
+  "description": "Implementation of website front-end for the project 3 in openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MA-antoine-33/Projet_3_Ohmyfood_Machet_Antoine.git"
+  },
+  "author": "Antoine Machet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MA-antoine-33/Projet_3_Ohmyfood_Machet_Antoine/issues"
+  },
+  "homepage": "https://github.com/MA-antoine-33/Projet_3_Ohmyfood_Machet_Antoine#readme",
+  "browserslist" : "last 4 versions"
+}
