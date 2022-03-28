@@ -1,0 +1,34 @@
+.fonct {
+    margin: 50px 15px;
+}
+.fonct-bloc {
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: $color-background;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px darken($color-background, 10);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px 10px;
+    padding: 10px;
+    & > i {
+        color: darken($color-background, 50);
+        margin: 30px;
+        font-size: 125%;
+    }
+    &__number {
+        font-size: 0.8em;
+        padding: 0px;
+        color: white;
+        background-color: $color-primary;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -15px;
+    }
+}
