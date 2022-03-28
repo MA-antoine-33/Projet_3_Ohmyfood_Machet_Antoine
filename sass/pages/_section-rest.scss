@@ -1,6 +1,10 @@
 .rest {
     background-color: $color-background;
     padding: 40px 20px;
+    & a {
+        text-decoration: none;
+        color: black;
+    }
 }
 .rest-bloc {
     margin-top: 20px;
@@ -8,13 +12,14 @@
     height: 300px;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 4px 4px 4px darken($color-background, 10);
+    box-shadow: $box-shadow;
     position: relative;
     & img {
         width: 100%;
-        height: 75%;
+        height: 70%;
         object-fit: cover;
         border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
     }
     &__banner {
         height: 20%;
@@ -27,23 +32,43 @@
         background-color: $color-tertiary;
         color: darken($color-tertiary, 40);
         font-weight: bold;
-        padding: 0px 20px;
+        padding: 0px 15px;
         position: absolute;
         top: 15px;
         right: 15px;
-    }
-    & .fa-regular {
-        font-size: 200%;
+        & p {
+            margin: 8px;
+        }
     }
 }
-
 .rest-bloc__banner--text{
     & p {
-            margin: 0px;
-            padding: 0px;
-    }
-    & H3 {
-        margin: -2px 0px 2px 0px ;
+        margin: 5px 0px;
         padding: 0px;
     }
+    & H3 {
+        margin: 15px 0px 2px 0px ;
+        padding: 0px;
+    }
+}
+.rest-bloc__banner--heart {
+    & .fa-regular {
+        font-size: 200%;
+        &:hover {
+            animation: heart 0.4s alternate-reverse;
+        }
+    }
+    & .fa-solid {
+        font-size: 200%;
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+        color: $color-primary;
+        opacity: 0;
+        &:hover {
+            animation: heart 0.4s forwards;
+        }
+    }
+    
+
 }

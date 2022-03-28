@@ -11,10 +11,10 @@
     <body>
         <header>
             <img src="images/ohmyfood.png" alt="Logo Ohmyfood" class="logo-header">
-            <form method="post" action="form.php" class="form-header">
-                <label for="form-header__search"><i class="fa-solid fa-location-dot" id="form-header__icon"></i></label>
-                <input type="search" name="search" id="form-header__search" placeholder="Paris, Belleville">
-            </form>
+            <div class="form-header">
+                <i class="fa-solid fa-location-dot" id="form-header__icon"></i>
+                <p>Paris, Belleville</p>
+            </div>
             <div class="menu">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, séléctionnés pas nos soins.</p>
@@ -35,59 +35,78 @@
             </div>
             <div class="fonct-bloc">
                 <p class="fonct-bloc__number">3</p>
-                <i class="fa-solid fa-igloo"></i>
+                <i class="fa-solid fa-shop"></i>
                 <p>Dégustez au restaurant</p>
             </div>        
         </section>
         <section class="rest">
             <h2>Restaurants</h2>
-            <div class="rest-bloc">
-                <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du gout">
-                <div class="rest-bloc__banner">
-                    <div class="rest-bloc__banner--text">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+            <a href="pages/menu1.html" target="blank">
+                <div class="rest-bloc">
+                    <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du gout">
+                    <div class="rest-bloc__banner">
+                        <div class="rest-bloc__banner--text">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="rest-bloc__banner--heart">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="rest-bloc__new">
-                    <p>Nouveau</p>
-                </div>
-            </div>
-            <div class="rest-bloc">
-                <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant la note enchantée">
-                <div class="rest-bloc__banner">
-                    <div class="rest-bloc__banner--text">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                    <div class="rest-bloc__new">
+                        <p>Nouveau</p>
                     </div>
-                    <i class="fa-regular fa-heart"></i>
                 </div>
-                <div class="rest-bloc__new">
-                    <p>Nouveau</p>
-                </div>
-            </div>
+            </a>
             <div class="rest-bloc">
-                <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française">
-                <div class="rest-bloc__banner">
-                    <div class="rest-bloc__banner--text">
-                        <h3>&Agrave; la française</h3>
-                        <p>Cité Rouge</p>
+                <a href="pages/menu2.html" target="blank">
+                    <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant la note enchantée">
+                    <div class="rest-bloc__banner">
+                        <div class="rest-bloc__banner--text">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="rest-bloc__banner--heart">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-            </div>
-            <div class="rest-bloc">
-                <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant le délice des sens">
-                <div class="rest-bloc__banner">
-                    <div class="rest-bloc__banner--text">
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
+                    <div class="rest-bloc__new">
+                        <p>Nouveau</p>
                     </div>
-                    <i class="fa-regular fa-heart"></i>
                 </div>
-            </div>
+            </a>
+            <a href="pages/menu3.html" target="blank">
+                <div class="rest-bloc">
+                    <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française">
+                    <div class="rest-bloc__banner">
+                        <div class="rest-bloc__banner--text">
+                            <h3>&Agrave; la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="rest-bloc__banner--heart">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="pages/menu4.html" target="blank">
+                <div class="rest-bloc">
+                    <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant le délice des sens">
+                    <div class="rest-bloc__banner">
+                        <div class="rest-bloc__banner--text">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="rest-bloc__banner--heart">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </section>
         <footer>
             <p>ohmyfood</p>
