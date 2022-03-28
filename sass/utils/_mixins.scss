@@ -1,0 +1,14 @@
+@mixin button {
+    margin-top: 15px;
+    padding: 20px 25px;
+    background: linear-gradient(to top left, $color-primary, $color-secondary);
+    color: white;
+    border: none;
+    border-radius: 35px;
+    font-size: 1.2em;
+    box-shadow: $box-shadow
+}
+@mixin button-hover {
+    background: linear-gradient(to top left, lighten($color-primary, 10), lighten($color-secondary, 5));
+    box-shadow: 2px 4px 4px darken($color-background, 30);;
+}

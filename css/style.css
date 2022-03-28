@@ -1,3 +1,11 @@
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   max-width: 480px;
   width: auto;
@@ -7,8 +15,9 @@ body {
 
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: bold;
+  margin: auto;
 }
 
 h3 {
@@ -17,8 +26,16 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+}
+
 p {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 header {
@@ -31,22 +48,35 @@ header {
   margin-bottom: 10px;
 }
 
+.header-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
 .form-header {
   background-color: #e4e4e4;
   width: 100%;
-  padding: 10px 0px;
-  box-shadow: 0px 2px #bebebe inset;
+  box-shadow: 0px 4px #d8d8d8 inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-#form-header__search {
-  background-color: #e4e4e4;
-  border: none;
-  margin-left: 10px;
+.form-header i {
+  font-size: 150%;
+  margin-right: 10px;
+}
+.form-header p {
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .menu {
   background-color: #f1f1f1;
   padding: 25px 50px 50px 50px;
+}
+.menu h2 {
+  width: 80%;
 }
 
 footer {
@@ -69,19 +99,18 @@ footer li i {
 }
 
 .fonct {
-  margin: 50px 15px;
+  margin: 60px 15px;
 }
 
 .fonct-bloc {
-  font-size: 1.4em;
   font-weight: bold;
   background-color: #f1f1f1;
-  border-radius: 15px;
-  box-shadow: 4px 4px 8px #d8d8d8;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px #d8d8d8;
   display: flex;
   align-items: center;
   position: relative;
-  margin: 20px 10px;
+  margin: 25px 10px;
   padding: 10px;
 }
 .fonct-bloc > i {
@@ -103,10 +132,20 @@ footer li i {
   position: absolute;
   left: -15px;
 }
+.fonct-bloc:hover {
+  background-color: rgba(147, 86, 220, 0.15);
+}
+.fonct-bloc:hover i {
+  color: #9356DC;
+}
 
 .rest {
   background-color: #f1f1f1;
   padding: 40px 20px;
+}
+.rest a {
+  text-decoration: none;
+  color: black;
 }
 
 .rest-bloc {
@@ -120,9 +159,10 @@ footer li i {
 }
 .rest-bloc img {
   width: 100%;
-  height: 75%;
+  height: 70%;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+  margin-bottom: 10px;
 }
 .rest-bloc__banner {
   height: 20%;
@@ -135,32 +175,141 @@ footer li i {
   background-color: #99E2D0;
   color: #278870;
   font-weight: bold;
-  padding: 0px 20px;
+  padding: 0px 15px;
   position: absolute;
   top: 15px;
   right: 15px;
 }
-.rest-bloc .fa-regular {
-  font-size: 200%;
+.rest-bloc__new p {
+  margin: 8px;
 }
 
 .rest-bloc__banner--text p {
-  margin: 0px;
+  margin: 5px 0px;
   padding: 0px;
 }
 .rest-bloc__banner--text H3 {
-  margin: -2px 0px 2px 0px;
+  margin: 15px 0px 2px 0px;
   padding: 0px;
 }
 
+.rest-bloc__banner--heart .fa-regular {
+  font-size: 200%;
+}
+.rest-bloc__banner--heart .fa-regular:hover {
+  animation: heart 0.4s alternate-reverse;
+}
+.rest-bloc__banner--heart .fa-solid {
+  font-size: 200%;
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  color: #9356DC;
+  opacity: 0;
+}
+.rest-bloc__banner--heart .fa-solid:hover {
+  animation: heart 0.4s forwards;
+}
+
+.carte {
+  background-color: #f1f1f1;
+  padding: 25px 15px;
+  margin-top: -50px;
+  border-radius: 25px 25px 0px 0px;
+  z-index: 1;
+  position: relative;
+}
+
+.carte__title {
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carte__title h1 {
+  font-size: 2em;
+  font-weight: normal;
+  font-family: "Shrikhand", sans-serif;
+  margin: 10px 0px 0px 5px;
+}
+.carte__title i {
+  font-size: 150%;
+}
+
+.carte__bloc--plat {
+  background-color: white;
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 4px #d8d8d8;
+}
+.carte__bloc--plat p {
+  margin: 0px;
+}
+.carte__bloc--plat H3 {
+  margin: 0px;
+}
+
+.carte__bloc--text {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.carte__bloc--text .prix {
+  font-weight: bold;
+}
+
+.carte__bloc--choix {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 15%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carte__bloc--choix i {
+  color: white;
+  font-size: 125%;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+}
+
 .menu__button {
-  font-size: 1.2em;
   margin-top: 15px;
-  padding: 15px 20px;
+  padding: 20px 25px;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
   border: none;
-  border-radius: 30px;
+  border-radius: 35px;
+  font-size: 1.2em;
+  box-shadow: 4px 4px 4px #d8d8d8;
+}
+.menu__button:hover {
+  background: linear-gradient(to top left, #ae80e5, #ff93e1);
+  box-shadow: 2px 4px 4px #a5a5a5;
+}
+
+.carte__button {
+  margin-top: 15px;
+  padding: 20px 25px;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: white;
+  border: none;
+  border-radius: 35px;
+  font-size: 1.2em;
+  box-shadow: 4px 4px 4px #d8d8d8;
+}
+.carte__button:hover {
+  background: linear-gradient(to top left, #ae80e5, #ff93e1);
+  box-shadow: 2px 4px 4px #a5a5a5;
 }
 
 /*ENsuite base - layout - pages - components*/
