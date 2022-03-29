@@ -3,6 +3,71 @@ body {
     width: auto;
     margin: auto;
     font-family: 'Roboto', sans-serif;
+    & .button-load {
+        position: absolute;
+        visibility: visible;
+        top: 7%;
+        left: 44%;
+        width: 12%;
+        height: 10%;    
+        &__charging {  
+            animation: charging-in $anim-dur 4 alternate;           
+            @for $i from 1 through $num_charging {
+                &--#{$i} {
+                    background: linear-gradient(to top left, darken($color-primary, 8 * $i), darken($color-secondary, 8 * $i));
+                    width: 15%;
+                    height: 18.75%;
+                    border-radius: 25px;
+                    animation-delay: $anim-delay * $i;
+                    transform: scale(1);
+                    opacity: 0;
+                }
+            }
+        }
+        &__charging--1 {
+            position: absolute;
+            top: 0%;
+            right: 42.5%;
+        }
+        &__charging--2 {
+            position: absolute;
+            top: 10.815%;
+            right: 13.5%;
+        }
+        &__charging--3 {
+            position: absolute;
+            top: 41.63%;
+            right: 0%;
+        }
+        &__charging--4 {
+            position: absolute;
+            top: 70.435%;
+            right: 13.5%;
+        }
+        &__charging--5 {
+            position: absolute;
+            top: 81.25%;
+            right: 42.5%;
+        }
+        &__charging--6 {
+            position: absolute;
+            top: 70.435%;
+            right: 71.5%;
+        }
+        &__charging--7 {
+            position: absolute;
+            top: 41.63%;
+            right: 85%;
+        }
+        &__charging--8 {
+            position: absolute;
+            top: 10.815%;
+            right: 71.5%;
+        } 
+    }
+}
+main {
+    animation: body-in 1s 3s backwards;
 }
 h2 {
     font-family: 'Roboto', sans-serif;
