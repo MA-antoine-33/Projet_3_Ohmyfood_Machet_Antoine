@@ -1,9 +1,74 @@
 @keyframes heart {
   0% {
+    transform: scaleY(0);
+  }
+  25% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(0.5);
+  }
+  75% {
+    transform: scaleY(0.75);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes charging-in {
+  0% {
+    transform: scale(0.1);
     opacity: 0;
   }
   100% {
+    transform: scale(1);
     opacity: 1;
+  }
+}
+@keyframes body-in {
+  0% {
+    transform: translateY(-9999px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes carte-bloc-in {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.33;
+  }
+  75% {
+    opacity: 0.66;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes carte-bloc-plat-in {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  0%, 99% {
+    background-color: rgba(255, 121, 218, 0.1);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes bloc-choix {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }
 body {
@@ -11,6 +76,133 @@ body {
   width: auto;
   margin: auto;
   font-family: "Roboto", sans-serif;
+}
+body .button-load {
+  position: absolute;
+  visibility: visible;
+  top: 7%;
+  left: 44%;
+  width: 12%;
+  height: 10%;
+}
+body .button-load__charging {
+  animation: charging-in 0.8s 4 alternate;
+}
+body .button-load__charging--1 {
+  background: linear-gradient(to top left, #7d34d5, #ff50cf);
+  width: 15%;
+  height: 18.75%;
+  border-radius: 25px;
+  animation-delay: 0.1s;
+  transform: scale(1);
+  opacity: 0;
+}
+body .button-load__charging--2 {
+  background: linear-gradient(to top left, #6a27ba, #ff27c3);
+  width: 15%;
+  height: 18.75%;
+  border-radius: 25px;
+  animation-delay: 0.2s;
+  transform: scale(1);
+  opacity: 0;
+}
+body .button-load__charging--3 {
+  background: linear-gradient(to top left, #562098, #fe00b8);
+  width: 15%;
+  height: 18.75%;
+  border-radius: 25px;
+  animation-delay: 0.3s;
+  transform: scale(1);
+  opacity: 0;
+}
+body .button-load__charging--4 {
+  background: linear-gradient(to top left, #431976, #d5009a);
+  width: 15%;
+  height: 18.75%;
+  border-radius: 25px;
+  animation-delay: 0.4s;
+  transform: scale(1);
+  opacity: 0;
+}
+body .button-load__charging--5 {
+  background: linear-gradient(to top left, #301255, #ac007d);
+  width: 15%;
+  height: 18.75%;
+  border-radius: 25px;
+  animation-delay: 0.5s;
+  transform: scale(1);
+  opacity: 0;
+}
+body .button-load__charging--6 {
+  background: linear-gradient(to top left, #1d0b33, #83005f);
+  width: 15%;
+  height: 18.75%;
+  border-radius: 25px;
+  animation-delay: 0.6s;
+  transform: scale(1);
+  opacity: 0;
+}
+body .button-load__charging--7 {
+  background: linear-gradient(to top left, #0a0411, #5a0041);
+  width: 15%;
+  height: 18.75%;
+  border-radius: 25px;
+  animation-delay: 0.7s;
+  transform: scale(1);
+  opacity: 0;
+}
+body .button-load__charging--8 {
+  background: linear-gradient(to top left, black, #320024);
+  width: 15%;
+  height: 18.75%;
+  border-radius: 25px;
+  animation-delay: 0.8s;
+  transform: scale(1);
+  opacity: 0;
+}
+body .button-load__charging--1 {
+  position: absolute;
+  top: 0%;
+  right: 42.5%;
+}
+body .button-load__charging--2 {
+  position: absolute;
+  top: 10.815%;
+  right: 13.5%;
+}
+body .button-load__charging--3 {
+  position: absolute;
+  top: 41.63%;
+  right: 0%;
+}
+body .button-load__charging--4 {
+  position: absolute;
+  top: 70.435%;
+  right: 13.5%;
+}
+body .button-load__charging--5 {
+  position: absolute;
+  top: 81.25%;
+  right: 42.5%;
+}
+body .button-load__charging--6 {
+  position: absolute;
+  top: 70.435%;
+  right: 71.5%;
+}
+body .button-load__charging--7 {
+  position: absolute;
+  top: 41.63%;
+  right: 85%;
+}
+body .button-load__charging--8 {
+  position: absolute;
+  top: 10.815%;
+  right: 71.5%;
+}
+
+main {
+  animation: body-in 1s 3s backwards;
 }
 
 h2 {
@@ -157,6 +349,9 @@ footer li i {
   box-shadow: 4px 4px 4px #d8d8d8;
   position: relative;
 }
+.rest-bloc:hover {
+  box-shadow: 4px 4px 8px #9356DC;
+}
 .rest-bloc img {
   width: 100%;
   height: 70%;
@@ -195,9 +390,8 @@ footer li i {
 
 .rest-bloc__banner--heart .fa-regular {
   font-size: 200%;
-}
-.rest-bloc__banner--heart .fa-regular:hover {
-  animation: heart 0.4s alternate-reverse;
+  transform: scaleY(1);
+  transform-origin: top;
 }
 .rest-bloc__banner--heart .fa-solid {
   font-size: 200%;
@@ -205,10 +399,29 @@ footer li i {
   right: 15px;
   bottom: 30px;
   color: #9356DC;
-  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
 }
-.rest-bloc__banner--heart .fa-solid:hover {
-  animation: heart 0.4s forwards;
+.rest-bloc__banner--heart .fa-solid-carte {
+  font-size: 200%;
+  position: absolute;
+  right: 40px;
+  top: 37px;
+  color: #9356DC;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.rest-bloc__banner--heart:hover .fa-regular {
+  animation: heart 0s alternate-reverse both;
+  transform: scaleY(0);
+}
+.rest-bloc__banner--heart:hover .fa-solid {
+  animation: heart 0.3s backwards;
+  transform: scaleY(1);
+}
+.rest-bloc__banner--heart:hover .fa-solid-carte {
+  animation: heart 0.3s backwards;
+  transform: scaleY(1);
 }
 
 .carte {
@@ -236,19 +449,65 @@ footer li i {
   font-size: 150%;
 }
 
+.carte__bloc {
+  animation: carte-bloc-in 1s both;
+}
+
 .carte__bloc--plat {
   background-color: white;
   position: relative;
+  height: 60px;
   border-radius: 15px;
   margin-bottom: 10px;
   padding: 10px;
   box-shadow: 4px 4px 4px #d8d8d8;
+  animation: carte-bloc-plat-in 0.2s both;
+}
+.carte__bloc--plat--1 {
+  animation-delay: 0.7s;
+}
+.carte__bloc--plat--2 {
+  animation-delay: 1.2s;
+}
+.carte__bloc--plat--3 {
+  animation-delay: 1.7s;
+}
+.carte__bloc--plat--4 {
+  animation-delay: 2.2s;
+}
+.carte__bloc--plat--5 {
+  animation-delay: 2.7s;
+}
+.carte__bloc--plat--6 {
+  animation-delay: 3.2s;
+}
+.carte__bloc--plat--7 {
+  animation-delay: 3.7s;
+}
+.carte__bloc--plat--8 {
+  animation-delay: 4.2s;
+}
+.carte__bloc--plat--9 {
+  animation-delay: 4.7s;
+}
+.carte__bloc--plat--10 {
+  animation-delay: 5.2s;
 }
 .carte__bloc--plat p {
   margin: 0px;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .carte__bloc--plat H3 {
   margin: 0px;
+}
+.carte__bloc--plat:hover .carte__bloc--choix {
+  animation: bloc-choix 0.4s forwards;
+  transform: scaleX(1);
+}
+.carte__bloc--plat:hover .carte__choix-part {
+  width: 85%;
 }
 
 .carte__bloc--text {
@@ -271,6 +530,8 @@ footer li i {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scaleX(0);
+  transform-origin: right;
 }
 .carte__bloc--choix i {
   color: white;
