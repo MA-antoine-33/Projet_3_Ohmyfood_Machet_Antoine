@@ -34,3 +34,13 @@ margin-bottom: 10px;
         width: 80%;
     }
 }
+.header-carte__arrow {
+    position: relative;
+   & i {
+       font-size: 200%;
+       color: $color-tertiary;
+       position: absolute;
+       top: center;
+       left: 5%;
+   }
+}

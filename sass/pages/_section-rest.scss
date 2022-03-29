@@ -16,6 +16,9 @@
     position: relative;
     &:hover {
         box-shadow: 4px 4px 8px $color-primary;
+        & .rest-bloc__new {
+            box-shadow: 4px 4px 8px darken($color-tertiary, 20); 
+        }
     }
     & img {
         width: 100%;

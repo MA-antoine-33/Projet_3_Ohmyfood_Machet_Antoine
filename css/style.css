@@ -224,6 +224,7 @@ h4 {
   font-weight: normal;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
+  text-transform: uppercase;
 }
 
 p {
@@ -269,6 +270,17 @@ header {
 }
 .menu h2 {
   width: 80%;
+}
+
+.header-carte__arrow {
+  position: relative;
+}
+.header-carte__arrow i {
+  font-size: 200%;
+  color: #99E2D0;
+  position: absolute;
+  top: center;
+  left: 5%;
 }
 
 footer {
@@ -351,6 +363,9 @@ footer li i {
 }
 .rest-bloc:hover {
   box-shadow: 4px 4px 8px #9356DC;
+}
+.rest-bloc:hover .rest-bloc__new {
+  box-shadow: 4px 4px 8px #4acbab;
 }
 .rest-bloc img {
   width: 100%;
@@ -449,11 +464,11 @@ footer li i {
   font-size: 150%;
 }
 
-.carte__bloc {
+.carte-bloc {
   animation: carte-bloc-in 1s both;
 }
 
-.carte__bloc--plat {
+.carte-bloc__plat {
   background-color: white;
   position: relative;
   height: 60px;
@@ -463,63 +478,45 @@ footer li i {
   box-shadow: 4px 4px 4px #d8d8d8;
   animation: carte-bloc-plat-in 0.2s both;
 }
-.carte__bloc--plat--1 {
+.carte-bloc__plat--1 {
   animation-delay: 0.7s;
 }
-.carte__bloc--plat--2 {
+.carte-bloc__plat--2 {
   animation-delay: 1.2s;
 }
-.carte__bloc--plat--3 {
+.carte-bloc__plat--3 {
   animation-delay: 1.7s;
 }
-.carte__bloc--plat--4 {
+.carte-bloc__plat--4 {
   animation-delay: 2.2s;
 }
-.carte__bloc--plat--5 {
+.carte-bloc__plat--5 {
   animation-delay: 2.7s;
 }
-.carte__bloc--plat--6 {
+.carte-bloc__plat--6 {
   animation-delay: 3.2s;
 }
-.carte__bloc--plat--7 {
+.carte-bloc__plat--7 {
   animation-delay: 3.7s;
 }
-.carte__bloc--plat--8 {
+.carte-bloc__plat--8 {
   animation-delay: 4.2s;
 }
-.carte__bloc--plat--9 {
+.carte-bloc__plat--9 {
   animation-delay: 4.7s;
 }
-.carte__bloc--plat--10 {
+.carte-bloc__plat--10 {
   animation-delay: 5.2s;
 }
-.carte__bloc--plat p {
-  margin: 0px;
-  height: 25px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.carte__bloc--plat H3 {
-  margin: 0px;
-}
-.carte__bloc--plat:hover .carte__bloc--choix {
+.carte-bloc__plat:hover .carte-bloc__choix--val {
   animation: bloc-choix 0.4s forwards;
   transform: scaleX(1);
 }
-.carte__bloc--plat:hover .carte__choix-part {
+.carte-bloc__plat:hover .carte-bloc__choix {
   width: 85%;
 }
 
-.carte__bloc--text {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-}
-.carte__bloc--text .prix {
-  font-weight: bold;
-}
-
-.carte__bloc--choix {
+.carte-bloc__choix--val {
   position: absolute;
   right: 0;
   top: 0;
@@ -533,9 +530,35 @@ footer li i {
   transform: scaleX(0);
   transform-origin: right;
 }
-.carte__bloc--choix i {
+.carte-bloc__choix--val i {
   color: white;
   font-size: 125%;
+}
+
+.carte-bloc__choix {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+.carte-bloc__choix .prix {
+  font-weight: bold;
+}
+
+.carte-bloc__text {
+  margin-right: 20px;
+  width: 80%;
+}
+.carte-bloc__text h3 {
+  margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.carte-bloc__text p {
+  margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .center-button {
