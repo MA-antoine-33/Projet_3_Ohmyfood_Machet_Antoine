@@ -21,10 +21,10 @@
         font-size: 150%;
     }
 }
-.carte__bloc {
+.carte-bloc {
     animation: carte-bloc-in 1s both;
 }
-.carte__bloc--plat {
+.carte-bloc__plat {
     background-color: white;
     position: relative;
     height: 60px;
@@ -38,34 +38,17 @@
             animation-delay: $anim-plat +0.5s * $i;
         }
     }
-    & p {
-        margin: 0px;
-        height: 25px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    & H3 {
-        margin: 0px;
-    }
     &:hover {
-        & .carte__bloc--choix {
+        & .carte-bloc__choix--val {
             animation: bloc-choix 0.4s forwards;
             transform: scaleX(1);   
         }
-        & .carte__choix-part {
+        & .carte-bloc__choix {
             width: 85%;
         }
     }
 }
-.carte__bloc--text {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    & .prix {
-        font-weight: bold;
-    }
-}
-.carte__bloc--choix {
+.carte-bloc__choix--val {
     position: absolute;
     right: 0;
     top: 0;
@@ -82,6 +65,30 @@
         color: white;
         font-size: 125%;
     }
+}
+.carte-bloc__choix {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    & .prix {
+        font-weight: bold;
+    }
+}
+.carte-bloc__text {
+    margin-right: 20px;
+    width: 80%;
+    & h3 {
+        margin: 0px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    & p {
+        margin: 0px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    } 
 }
 .center-button {
     display: flex;
