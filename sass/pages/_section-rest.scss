@@ -63,7 +63,7 @@
         transform: scaleY(1);
         transform-origin: top;
     }      
-    & .fa-solid {
+    & .fa-solid-plat {
         font-size: 200%;
         position: absolute;
         right: 15px;
@@ -86,7 +86,7 @@
                 animation: heart 0s alternate-reverse both;
                 transform: scaleY(0);
             }
-            & .fa-solid {
+            & .fa-solid-plat {
                 animation: heart 0.3s backwards;
                 transform: scaleY(1);
             }

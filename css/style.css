@@ -72,7 +72,7 @@
   }
 }
 body {
-  max-width: 480px;
+  max-width: 767px;
   width: auto;
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -84,6 +84,8 @@ body .button-load {
   left: 44%;
   width: 12%;
   height: 10%;
+  max-width: 120px;
+  max-height: 100px;
 }
 body .button-load__charging {
   animation: charging-in 0.8s 4 alternate;
@@ -228,6 +230,7 @@ h4 {
 }
 
 p {
+  font-family: "Roboto", sans-serif;
   font-size: 1.3em;
 }
 
@@ -286,6 +289,7 @@ header {
 footer {
   background-color: #323232;
   color: white;
+  margin-bottom: 10px;
   padding: 10px 15px 15px 25px;
 }
 footer p {
@@ -408,7 +412,7 @@ footer li i {
   transform: scaleY(1);
   transform-origin: top;
 }
-.rest-bloc__banner--heart .fa-solid {
+.rest-bloc__banner--heart .fa-solid-plat {
   font-size: 200%;
   position: absolute;
   right: 15px;
@@ -430,7 +434,7 @@ footer li i {
   animation: heart 0s alternate-reverse both;
   transform: scaleY(0);
 }
-.rest-bloc__banner--heart:hover .fa-solid {
+.rest-bloc__banner--heart:hover .fa-solid-plat {
   animation: heart 0.3s backwards;
   transform: scaleY(1);
 }
@@ -465,7 +469,13 @@ footer li i {
 }
 
 .carte-bloc {
-  animation: carte-bloc-in 1s both;
+  animation: carte-bloc-in 0.5s both;
+}
+.carte-bloc--1 {
+  animation-delay: 1.5s;
+}
+.carte-bloc--2 {
+  animation-delay: 3s;
 }
 
 .carte-bloc__plat {
@@ -476,37 +486,37 @@ footer li i {
   margin-bottom: 10px;
   padding: 10px;
   box-shadow: 4px 4px 4px #d8d8d8;
-  animation: carte-bloc-plat-in 0.2s both;
+  animation: carte-bloc-plat-in 0.5s 0.4s both;
 }
 .carte-bloc__plat--1 {
-  animation-delay: 0.7s;
+  animation-delay: 0.5s;
 }
 .carte-bloc__plat--2 {
-  animation-delay: 1.2s;
+  animation-delay: 1s;
 }
 .carte-bloc__plat--3 {
-  animation-delay: 1.7s;
+  animation-delay: 1.5s;
 }
 .carte-bloc__plat--4 {
-  animation-delay: 2.2s;
+  animation-delay: 2s;
 }
 .carte-bloc__plat--5 {
-  animation-delay: 2.7s;
+  animation-delay: 2.5s;
 }
 .carte-bloc__plat--6 {
-  animation-delay: 3.2s;
+  animation-delay: 3s;
 }
 .carte-bloc__plat--7 {
-  animation-delay: 3.7s;
+  animation-delay: 3.5s;
 }
 .carte-bloc__plat--8 {
-  animation-delay: 4.2s;
+  animation-delay: 4s;
 }
 .carte-bloc__plat--9 {
-  animation-delay: 4.7s;
+  animation-delay: 4.5s;
 }
 .carte-bloc__plat--10 {
-  animation-delay: 5.2s;
+  animation-delay: 5s;
 }
 .carte-bloc__plat:hover .carte-bloc__choix--val {
   animation: bloc-choix 0.4s forwards;

@@ -1,5 +1,5 @@
 body {
-    max-width: 480px;
+    max-width: 767px;
     width: auto;
     margin: auto;
     font-family: 'Roboto', sans-serif;
@@ -9,7 +9,9 @@ body {
         top: 7%;
         left: 44%;
         width: 12%;
-        height: 10%;    
+        height: 10%;
+        max-width: 120px;
+        max-height: 100px;    
         &__charging {  
             animation: charging-in $anim-dur 4 alternate;           
             @for $i from 1 through $num_charging {
@@ -89,5 +91,6 @@ h4 {
     text-transform: uppercase;
 }
 p {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
 }
