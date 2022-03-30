@@ -633,6 +633,114 @@ footer a {
     align-items: center;
   }
 }
+@media all and (min-width: 992px) {
+  body {
+    max-width: none;
+    font-size: 100%;
+  }
+
+  h2 {
+    text-align: center;
+    text-shadow: 1px 1px 1px #9356DC;
+  }
+
+  header {
+    padding-top: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top left, #d7c0f2, #ffdff6);
+  }
+
+  .form-header {
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    width: 50%;
+  }
+
+  .menu {
+    border-radius: 25px;
+    margin-bottom: 25px;
+  }
+
+  .fonct-bloc {
+    width: 28%;
+  }
+
+  .fonct {
+    box-shadow: 4px 4px 4px #c9abee;
+    border-radius: 25px;
+  }
+  .fonct__flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .rest {
+    border-radius: 25px;
+    width: 95%;
+    box-shadow: 4px 4px 4px #c9abee;
+    margin-bottom: 25px;
+  }
+
+  .rest h2 {
+    text-align: left;
+    margin-bottom: 25px;
+    text-decoration: underline;
+  }
+
+  .rest-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #9356DC;
+  }
+
+  .rest-right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rest-bloc {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .rest-desktop__hidden {
+    width: 40%;
+    height: 250px;
+    background: linear-gradient(to top left, #d7c0f2, #fff9fd);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 150%;
+  }
+  .rest-desktop__hidden div {
+    width: 80%;
+    text-align: center;
+  }
+  .rest-desktop__hidden--title {
+    text-shadow: 1px 1px 1px #FF79DA;
+    text-decoration: underline;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .menu__button {
   margin-top: 15px;
   padding: 20px 25px;
