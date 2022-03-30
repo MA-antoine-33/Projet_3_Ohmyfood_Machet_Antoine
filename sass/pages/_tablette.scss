@@ -1,0 +1,46 @@
+@media all and (max-width : 991px) and (min-width : 768px) {
+    body {
+       max-width: 991px;
+       font-size: 125%;
+    }
+    .menu h2 {
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+        text-shadow: 1px 1px 1px $color-primary;
+        font-size: 200%;
+    }
+    header {
+        text-align: center;
+    }
+    .fonct-bloc {
+        justify-content: center;
+        text-align: center;
+        &__number {
+            left: 50%;
+            top: -25%;
+        }
+        & > i {
+            font-size: 150%;
+        }
+    }
+    .rest {
+        border-radius: 25px;
+        box-shadow: $box-shadow;
+        margin: 25px;
+        margin-bottom: 40px;
+    }
+    .rest-bloc {
+        margin-top: 40px;
+        &__new {
+            border-radius: 15px;
+            font-size: 125%;
+        }
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
