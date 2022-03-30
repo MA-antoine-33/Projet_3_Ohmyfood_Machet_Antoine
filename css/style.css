@@ -305,6 +305,10 @@ footer li {
 footer li i {
   width: 30px;
 }
+footer a {
+  color: white;
+  text-decoration: none;
+}
 
 .fonct {
   margin: 60px 15px;
@@ -576,6 +580,59 @@ footer li i {
   justify-content: center;
 }
 
+@media all and (max-width: 991px) and (min-width: 768px) {
+  body {
+    max-width: 991px;
+    font-size: 125%;
+  }
+
+  .menu h2 {
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+    text-shadow: 1px 1px 1px #9356DC;
+    font-size: 200%;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .fonct-bloc {
+    justify-content: center;
+    text-align: center;
+  }
+  .fonct-bloc__number {
+    left: 50%;
+    top: -25%;
+  }
+  .fonct-bloc > i {
+    font-size: 150%;
+  }
+
+  .rest {
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px #d8d8d8;
+    margin: 25px;
+    margin-bottom: 40px;
+  }
+
+  .rest-bloc {
+    margin-top: 40px;
+  }
+  .rest-bloc__new {
+    border-radius: 15px;
+    font-size: 125%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .menu__button {
   margin-top: 15px;
   padding: 20px 25px;
