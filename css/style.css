@@ -1,3 +1,4 @@
+/*Heart coming*/
 @keyframes heart {
   0% {
     transform: scaleY(0);
@@ -15,6 +16,7 @@
     transform: scaleY(1);
   }
 }
+/*loading animation*/
 @keyframes charging-in {
   0% {
     transform: scale(0.1);
@@ -25,6 +27,7 @@
     opacity: 1;
   }
 }
+/*body arrived animation*/
 @keyframes body-in {
   0% {
     transform: translateY(-9999px);
@@ -33,6 +36,7 @@
     transform: translateY(0);
   }
 }
+/*animation of the menu*/
 @keyframes carte-bloc-in {
   0% {
     opacity: 0;
@@ -275,6 +279,7 @@ header {
   width: 80%;
 }
 
+/*arrow for go-back in the menu page*/
 .header-carte__arrow {
   position: relative;
 }
@@ -282,7 +287,6 @@ header {
   font-size: 200%;
   color: #99E2D0;
   position: absolute;
-  top: center;
   left: 5%;
 }
 
@@ -478,6 +482,7 @@ footer a {
   font-size: 150%;
 }
 
+/*animation and iteration for timing of menus*/
 .carte-bloc {
   animation: carte-bloc-in 0.5s both;
 }
