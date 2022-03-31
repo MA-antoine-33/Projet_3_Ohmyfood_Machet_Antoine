@@ -7,6 +7,11 @@
         text-align: center;
         text-shadow: 1px 1px 1px $color-primary;
     }
+    h4 {
+        width: 100%;
+        text-align: center;
+    }
+
     header {
         padding-top: 10px;
         border-radius: 25px;
@@ -65,8 +70,10 @@
         .rest-bloc {
         width: 50%;
         margin-top: 30px;
+        margin-bottom: 0px;
         }
     .rest-desktop__hidden {
+        visibility: visible;
         width: 40%;
         height: 250px;
         background: linear-gradient(to top left, lighten($color-primary, 25), lighten($color-secondary, 25));
@@ -85,6 +92,25 @@
          &--title {
             text-shadow: 1px 1px 1px $color-secondary;
             text-decoration: underline;
+        }
+    }
+    .carte-bloc__plat {
+        height: auto;
+        padding-bottom: 0px;
+        padding-top: 15px;
+        margin-bottom: 15px;
+        &:hover {
+            & .carte-bloc__choix {
+                width: 100%;
+            }
+        }
+    }
+    .carte-bloc__choix {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        & .carte-bloc__text {
+            width: 100%;
         }
     }
     footer {
