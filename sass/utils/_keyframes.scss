@@ -1,3 +1,4 @@
+/*Heart coming*/
 @keyframes heart {
     0% {
         transform: scaleY(0);
@@ -16,6 +17,7 @@
         transform: scaleY(1);
     }
 }
+/*loading animation*/
 @keyframes charging-in {
     0% {
         transform: scale(0.1);
@@ -26,6 +28,7 @@
         opacity: 1;
     }
 }
+/*body arrived animation*/
 @keyframes body-in {
     0% {
         transform: translateY(-9999px);
@@ -34,6 +37,7 @@
         transform: translateY(0);
     }
 }
+/*animation of the menu*/
 @keyframes carte-bloc-in {
     0% {
         opacity: 0;
