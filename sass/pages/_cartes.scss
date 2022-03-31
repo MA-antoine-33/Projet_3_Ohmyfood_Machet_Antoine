@@ -1,4 +1,5 @@
 .carte {
+    width: 96%;
     background-color: $color-background;
     padding: 25px 15px;
     margin-top: -50px;
@@ -21,6 +22,7 @@
         font-size: 150%;
     }
 }
+/*animation and iteration for timing of menus*/
 .carte-bloc {
     animation: carte-bloc-in $anim-plat both;
     @for $i from 1 through 2 {
