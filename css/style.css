@@ -704,9 +704,7 @@ footer a {
   }
 
   .rest h2 {
-    text-align: left;
     margin-bottom: 25px;
-    text-decoration: underline;
   }
 
   .rest-desktop {
@@ -714,8 +712,14 @@ footer a {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #9356DC;
+    box-shadow: 4px 4px 4px #c9abee;
+    border-radius: 25px;
+  }
+  .rest-desktop:hover {
+    box-shadow: 4px 4px 8px #9356DC;
+  }
+  .rest-desktop:hover .rest-bloc__new {
+    box-shadow: 4px 4px 8px #4acbab;
   }
 
   .rest-right {
@@ -745,13 +749,52 @@ footer a {
     justify-content: space-around;
     font-size: 150%;
   }
-  .rest-desktop__hidden div {
-    width: 80%;
-    text-align: center;
-  }
   .rest-desktop__hidden--title {
     text-shadow: 1px 1px 1px #FF79DA;
     text-decoration: underline;
+    margin-bottom: 10px;
+  }
+
+  .carte-bloc__hidden {
+    width: 100%;
+    font-size: 50%;
+    background-color: white;
+    position: relative;
+    height: 60px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px #d8d8d8;
+  }
+  .carte-bloc__hidden:hover .carte-bloc__choix--val {
+    animation: bloc-choix 0.4s forwards;
+    transform: scaleX(1);
+  }
+  .carte-bloc__hidden:hover .carte-bloc__choix-hidden {
+    width: 85%;
+  }
+
+  .carte-bloc__choix-hidden {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .carte-bloc__choix-hidden .prix {
+    font-weight: bold;
+  }
+
+  .carte-bloc__text3 h3 {
+    margin: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .carte-bloc__text3 p {
+    margin: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .carte-bloc__plat {

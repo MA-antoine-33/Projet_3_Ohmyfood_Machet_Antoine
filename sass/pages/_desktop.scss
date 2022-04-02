@@ -48,23 +48,28 @@
         margin-bottom: 25px;
     }
     .rest h2 {
-        text-align: left;
         margin-bottom: 25px;
-        text-decoration: underline;
     }
     .rest-desktop {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-bottom: 3px solid $color-primary;
+        box-shadow: 4px 4px 4px lighten($color-primary, 20);
+        border-radius: 25px;
+        &:hover {
+            box-shadow: 4px 4px 8px $color-primary;
+            & .rest-bloc__new {
+                box-shadow: 4px 4px 8px darken($color-tertiary, 20); 
+            }
+        }
     }
     .rest-right {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+
         }
         .rest-bloc {
         width: 50%;
@@ -84,13 +89,53 @@
         align-items: center;
         justify-content: space-around;
         font-size: 150%;
-        & div {
-            width: 80%;
-            text-align: center;
-        }
          &--title {
             text-shadow: 1px 1px 1px $color-secondary;
             text-decoration: underline;
+            margin-bottom: 10px;
+        }
+    }
+    .carte-bloc__hidden {
+        width: 100%;
+        font-size: 50%;
+        background-color: white;
+        position: relative;
+        height: 60px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-shadow: 4px 4px 4px darken($color-background, 10);
+        &:hover {
+            & .carte-bloc__choix--val {
+                animation: bloc-choix 0.4s forwards;
+                transform: scaleX(1);   
+            }
+            & .carte-bloc__choix-hidden {
+                width: 85%;
+            }
+        }
+    }
+    .carte-bloc__choix-hidden {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+        & .prix {
+            font-weight: bold;
+        }
+    }
+    .carte-bloc__text3 {
+        & h3 {
+            margin: 0px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        & p {
+            margin: 0px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         }
     }
     .carte-bloc__plat {
