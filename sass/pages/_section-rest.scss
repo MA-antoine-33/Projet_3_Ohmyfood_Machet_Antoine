@@ -8,7 +8,6 @@
 }
 .rest-bloc {
     margin-top: 20px;
-    margin-bottom: -50px;
     width: 100%;
     height: 300px;
     border-radius: 15px;
@@ -50,6 +49,7 @@
 }
 .rest-desktop__hidden {
     visibility: hidden;
+    height: 0px;
 }
 .rest-bloc__banner--text{
     & p {
