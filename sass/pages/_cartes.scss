@@ -36,7 +36,7 @@
     position: relative;
     height: 60px;
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 10px;
     box-shadow: 4px 4px 4px darken($color-background, 10);
     animation: carte-bloc-plat-in $anim-plat 0.4s both;
@@ -49,6 +49,9 @@
         & .carte-bloc__choix--val {
             animation: bloc-choix 0.4s forwards;
             transform: scaleX(1);   
+        }
+        & .carte-bloc__choix--val i {
+            animation: rotate-valide 0.4s 2 forwards;
         }
         & .carte-bloc__choix {
             width: 85%;

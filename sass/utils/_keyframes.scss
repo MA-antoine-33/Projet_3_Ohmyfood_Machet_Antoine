@@ -2,7 +2,6 @@
 @keyframes heart {
     0% {
         transform: scaleY(0);
-       
     }
     25% {
         transform: scaleY(0.25);
@@ -31,10 +30,19 @@
 /*body arrived animation*/
 @keyframes body-in {
     0% {
-        transform: translateY(-9999px);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
     }
     100% {
-        transform: translateY(0);
+        opacity: 1;
     }
 }
 /*animation of the menu*/
@@ -74,5 +82,22 @@
     }
     100% {
         transform: scaleX(1);
+    }
+}
+@keyframes rotate-valide {
+    0% {
+        transform: rotate(0turn);
+    }
+    25% {
+        transform: rotate(0.25turn);
+    }
+    50% {
+        transform: rotate(0.5turn);
+    }
+    75% {
+        transform: rotate(0.75turn);
+    }
+    100% {
+        transform: rotate(1turn);
     }
 }
