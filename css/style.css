@@ -432,7 +432,7 @@ footer a {
   margin: 8px;
 }
 
-.rest-desktop__hidden, .carte-bloc__choix-hidden {
+.rest-desktop__hidden, .rest-desktop__hidden--title, .carte-bloc__choix-hidden {
   visibility: hidden;
   height: 0px;
 }
