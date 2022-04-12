@@ -432,7 +432,7 @@ footer a {
   margin: 8px;
 }
 
-.rest-desktop__hidden {
+.rest-desktop__hidden, .carte-bloc__choix-hidden {
   visibility: hidden;
   height: 0px;
 }
@@ -803,6 +803,7 @@ footer a {
   }
 
   .carte-bloc__choix-hidden {
+    visibility: visible;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -848,6 +849,10 @@ footer a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .rest-desktop__hidden--title {
+    visibility: visible;
   }
 }
 .menu__button {
