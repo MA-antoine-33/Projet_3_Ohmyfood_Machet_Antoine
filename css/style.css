@@ -118,14 +118,14 @@ body .button-load {
   max-height: 100px;
 }
 body .button-load__charging {
-  animation: charging-in 0.8s 4 alternate;
+  animation: charging-in 0.5s 4 alternate;
 }
 body .button-load__charging--1 {
   background: linear-gradient(to top left, #7d34d5, #ff50cf);
   width: 15%;
   height: 18.75%;
   border-radius: 25px;
-  animation-delay: 0.1s;
+  animation-delay: 0.0625s;
   transform: scale(1);
   opacity: 0;
 }
@@ -134,7 +134,7 @@ body .button-load__charging--2 {
   width: 15%;
   height: 18.75%;
   border-radius: 25px;
-  animation-delay: 0.2s;
+  animation-delay: 0.125s;
   transform: scale(1);
   opacity: 0;
 }
@@ -143,7 +143,7 @@ body .button-load__charging--3 {
   width: 15%;
   height: 18.75%;
   border-radius: 25px;
-  animation-delay: 0.3s;
+  animation-delay: 0.1875s;
   transform: scale(1);
   opacity: 0;
 }
@@ -152,7 +152,7 @@ body .button-load__charging--4 {
   width: 15%;
   height: 18.75%;
   border-radius: 25px;
-  animation-delay: 0.4s;
+  animation-delay: 0.25s;
   transform: scale(1);
   opacity: 0;
 }
@@ -161,7 +161,7 @@ body .button-load__charging--5 {
   width: 15%;
   height: 18.75%;
   border-radius: 25px;
-  animation-delay: 0.5s;
+  animation-delay: 0.3125s;
   transform: scale(1);
   opacity: 0;
 }
@@ -170,7 +170,7 @@ body .button-load__charging--6 {
   width: 15%;
   height: 18.75%;
   border-radius: 25px;
-  animation-delay: 0.6s;
+  animation-delay: 0.375s;
   transform: scale(1);
   opacity: 0;
 }
@@ -179,7 +179,7 @@ body .button-load__charging--7 {
   width: 15%;
   height: 18.75%;
   border-radius: 25px;
-  animation-delay: 0.7s;
+  animation-delay: 0.4375s;
   transform: scale(1);
   opacity: 0;
 }
@@ -188,7 +188,7 @@ body .button-load__charging--8 {
   width: 15%;
   height: 18.75%;
   border-radius: 25px;
-  animation-delay: 0.8s;
+  animation-delay: 0.5s;
   transform: scale(1);
   opacity: 0;
 }
@@ -248,15 +248,6 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.4em;
   font-weight: bold;
-}
-
-h4 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6em;
-  font-weight: normal;
-  border-bottom: 3px solid #99E2D0;
-  width: 50px;
-  text-transform: uppercase;
 }
 
 p {
@@ -434,7 +425,7 @@ footer a {
 
 .rest-desktop__hidden, .rest-desktop__hidden--title, .carte-bloc__choix-hidden {
   visibility: hidden;
-  height: 0px;
+  height: 40px;
 }
 
 .rest-bloc__banner--text p {
@@ -482,6 +473,10 @@ footer a {
   transform: scaleY(1);
 }
 
+.titre-plat {
+  font-weight: bold;
+}
+
 .carte {
   width: 96%;
   background-color: #f1f1f1;
@@ -510,13 +505,13 @@ footer a {
 
 /*animation and iteration for timing of menus*/
 .carte-bloc {
-  animation: carte-bloc-in 0.5s both;
+  animation: carte-bloc-in 0.3s both;
 }
 .carte-bloc--1 {
-  animation-delay: 1.5s;
+  animation-delay: 0.9s;
 }
 .carte-bloc--2 {
-  animation-delay: 3s;
+  animation-delay: 1.8s;
 }
 
 .carte-bloc__plat {
@@ -527,37 +522,37 @@ footer a {
   margin-bottom: 15px;
   padding: 10px;
   box-shadow: 4px 4px 4px #d8d8d8;
-  animation: carte-bloc-plat-in 0.5s 0.4s both;
+  animation: carte-bloc-plat-in 0.3s 0.4s both;
 }
 .carte-bloc__plat--1 {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 .carte-bloc__plat--2 {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 .carte-bloc__plat--3 {
-  animation-delay: 1.5s;
+  animation-delay: 0.9s;
 }
 .carte-bloc__plat--4 {
-  animation-delay: 2s;
+  animation-delay: 1.2s;
 }
 .carte-bloc__plat--5 {
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 .carte-bloc__plat--6 {
-  animation-delay: 3s;
+  animation-delay: 1.8s;
 }
 .carte-bloc__plat--7 {
-  animation-delay: 3.5s;
+  animation-delay: 2.1s;
 }
 .carte-bloc__plat--8 {
-  animation-delay: 4s;
+  animation-delay: 2.4s;
 }
 .carte-bloc__plat--9 {
-  animation-delay: 4.5s;
+  animation-delay: 2.7s;
 }
 .carte-bloc__plat--10 {
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 .carte-bloc__plat:hover .carte-bloc__choix--val {
   animation: bloc-choix 0.4s forwards;
@@ -625,21 +620,17 @@ footer a {
     max-width: 991px;
     font-size: 125%;
   }
-
   .menu h2 {
     width: 100%;
   }
-
   h2 {
     text-align: center;
     text-shadow: 1px 1px 1px #9356DC;
     font-size: 200%;
   }
-
   header {
     text-align: center;
   }
-
   .fonct-bloc {
     justify-content: center;
     text-align: center;
@@ -651,14 +642,12 @@ footer a {
   .fonct-bloc > i {
     font-size: 150%;
   }
-
   .rest {
     border-radius: 25px;
     box-shadow: 4px 4px 4px #d8d8d8;
     margin: 25px;
     margin-bottom: 40px;
   }
-
   .rest-bloc {
     margin-top: 40px;
   }
@@ -666,7 +655,6 @@ footer a {
     border-radius: 15px;
     font-size: 125%;
   }
-
   footer {
     display: flex;
     justify-content: space-around;
@@ -678,17 +666,14 @@ footer a {
     max-width: none;
     font-size: 100%;
   }
-
   h2 {
     text-align: center;
     text-shadow: 1px 1px 1px #9356DC;
   }
-
   h4 {
     width: 100%;
     text-align: center;
   }
-
   header {
     padding-top: 10px;
     border-radius: 25px;
@@ -697,23 +682,19 @@ footer a {
     align-items: center;
     background: linear-gradient(to top left, #d7c0f2, #ffdff6);
   }
-
   .form-header {
     background-color: #f1f1f1;
     border-radius: 25px;
     margin-bottom: 25px;
     width: 50%;
   }
-
   .menu {
     border-radius: 25px;
     margin-bottom: 25px;
   }
-
   .fonct-bloc {
     width: 28%;
   }
-
   .fonct {
     box-shadow: 4px 4px 4px #c9abee;
     border-radius: 25px;
@@ -723,18 +704,15 @@ footer a {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-
   .rest {
     border-radius: 25px;
     width: 95%;
     box-shadow: 4px 4px 4px #c9abee;
     margin-bottom: 25px;
   }
-
   .rest h2 {
     margin-bottom: 25px;
   }
-
   .rest-desktop {
     display: flex;
     justify-content: space-between;
@@ -749,20 +727,17 @@ footer a {
   .rest-desktop:hover .rest-bloc__new {
     box-shadow: 4px 4px 8px #4acbab;
   }
-
   .rest-right {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
-
   .rest-bloc {
     width: 50%;
     margin-top: 30px;
     margin-bottom: 0px;
   }
-
   .rest-desktop__hidden {
     visibility: visible;
     width: 40%;
@@ -782,7 +757,6 @@ footer a {
     text-decoration: underline;
     margin-bottom: 10px;
   }
-
   .carte-bloc__hidden {
     width: 100%;
     font-size: 50%;
@@ -801,7 +775,6 @@ footer a {
   .carte-bloc__hidden:hover .carte-bloc__choix-hidden {
     width: 85%;
   }
-
   .carte-bloc__choix-hidden {
     visibility: visible;
     width: 100%;
@@ -812,7 +785,6 @@ footer a {
   .carte-bloc__choix-hidden .prix {
     font-weight: bold;
   }
-
   .carte-bloc__text3 h3 {
     margin: 0px;
     white-space: nowrap;
@@ -825,7 +797,6 @@ footer a {
     text-overflow: ellipsis;
     overflow: hidden;
   }
-
   .carte-bloc__plat {
     height: auto;
     padding-bottom: 0px;
@@ -835,7 +806,6 @@ footer a {
   .carte-bloc__plat:hover .carte-bloc__choix {
     width: 100%;
   }
-
   .carte-bloc__choix {
     flex-direction: column;
     text-align: center;
@@ -844,13 +814,11 @@ footer a {
   .carte-bloc__choix .carte-bloc__text {
     width: 100%;
   }
-
   footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-
   .rest-desktop__hidden--title {
     visibility: visible;
   }
