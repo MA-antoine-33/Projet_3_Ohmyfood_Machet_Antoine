@@ -6,7 +6,7 @@ $color-background: #f1f1f1;
 
 $box-shadow: 4px 4px 4px darken($color-background, 10);
 
-$anim-dur:0.8s;
+$anim-dur:0.5s;
 $num_charging: 8;
 $anim-delay: $anim-dur / $num-charging;
-$anim-plat: 0.5s;
+$anim-plat: 0.3s;

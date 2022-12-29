@@ -47,9 +47,9 @@
         }
     }
 }
-.rest-desktop__hidden, .carte-bloc__choix-hidden {
+.rest-desktop__hidden, .rest-desktop__hidden--title, .carte-bloc__choix-hidden {
     visibility: hidden;
-    height: 0px;
+    height: 40px;
 }
 .rest-bloc__banner--text{
     & p {
@@ -99,5 +99,8 @@
                 transform: scaleY(1);
             }
         }
+}
+.titre-plat {
+    font-weight: bold;
 }
  
